@@ -9,7 +9,7 @@ import {CalendarModule} from 'angular-calendar';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     CalendarModule.forRoot()
   ],
   providers: [],
