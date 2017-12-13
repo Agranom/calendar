@@ -10,7 +10,9 @@ export class AppComponent implements OnInit {
   events = [
     {
       start: new Date(),
-      end: new Date()
+      end: new Date(),
+      title: 'Hello',
+      color: '#00ff00'
     }
   ];
 
