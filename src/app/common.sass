@@ -1,0 +1,37 @@
+.calendar-cell
+    padding: 10px
+    height: 100%
+    box-sizing: border-box
+    &.event
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.08)
+    &.week
+        border-radius: 4px
+    &__header
+        text-align: right
+        margin-bottom: 10px
+    &__date
+        margin-left: auto
+    &__tag
+        padding: 0 3px
+        border-radius: 4px
+        line-height: 14px
+        display: inline-block
+        float: left
+        /deep/ span
+            font-size: 10px
+            text-transform: uppercase
+            color: #ffffff
+    &__event-description
+        margin-bottom: 10px
+        p
+            font-size: 13px
+            line-height: 15px
+            word-break: break-word
+    &__info
+        margin-top: auto
+    &__count-events
+        font-size: 12px
+        line-height: 14px
+        color: #1c9ad6
+        span
+            font-weight: bold

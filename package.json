@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
-    "serve:ssr": "node dist/server.js",
+    "serve:ssr": "nodemon dist/server.js",
     "build:client-and-server-bundles": "ng build --prod && ng build --prod --app 1 --output-hashing=false",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
@@ -28,8 +28,10 @@
     "@angular/router": "^5.1.0",
     "@nguniversal/express-engine": "^5.0.0-beta.5",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
-    "angular-calendar": "^0.22.1",
+    "angular-calendar": "^0.23.2",
+    "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
+    "moment": "^2.19.4",
     "rxjs": "^5.5.2",
     "ts-loader": "^3.2.0",
     "zone.js": "^0.8.14"
@@ -42,6 +44,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "html-pdf": "^2.2.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",

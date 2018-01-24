@@ -1,0 +1,7 @@
+<span *ngIf="!event.isCustomEvent">{{event.groupName}}</span>
+<span *ngIf="event.isCustomEvent && !isAllDay" [ngStyle]="styles">
+	{{event.start|date:'hh:mm'}}-{{event.end|date:'hh:mm'}}
+</span>
+<span *ngIf="event.isCustomEvent && isAllDay" [ngStyle]="styles">
+	All day
+</span>
